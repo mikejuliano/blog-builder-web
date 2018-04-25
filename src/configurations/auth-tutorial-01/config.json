@@ -1,4 +1,4 @@
-export const config = {
+{
   "title": "React Django Docker Auth Tutorial Part 01",
   "configPath": "",
   "elements": [
@@ -7,4 +7,4 @@ export const config = {
       "file": "01.png"
     }
   ]
-};
+}

@@ -1,4 +1,5 @@
 import React from 'react';
+import {BlogImage} from './BlogImage';
 
 export class ElementType {
   static codeBlock = 'codeBlock';
@@ -9,7 +10,8 @@ export class ElementType {
   static link = 'link'; // todo
 }
 
-export const DynamicElement = ({elementConfig, handlers}) => {
+export const DynamicElement = ({config, handlers}) => {
+
   const renderElement = (c) => {
     switch (c.type) {
     case (ElementType.codeBlock):
@@ -17,7 +19,7 @@ export const DynamicElement = ({elementConfig, handlers}) => {
     case (ElementType.list):
       break;
     case (ElementType.image):
-      break;
+      return <BlogImage file={ '01.png' }/>;
     case (ElementType.paragraph):
       break;
     case (ElementType.headline):
@@ -28,6 +30,6 @@ export const DynamicElement = ({elementConfig, handlers}) => {
   };
 
   return (
-    renderElement(elementConfig)
+    renderElement(config)
   );
 };

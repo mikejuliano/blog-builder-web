@@ -1,8 +1,13 @@
 export class BuilderConfig {
   title;
+  configPath;
+  elements;
 
   static DEFAULT = {
-    title: null
+    title: null,
+    configPath: null,
+    elements: []
+
   };
 }
 
