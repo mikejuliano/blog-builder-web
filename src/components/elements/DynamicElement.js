@@ -5,12 +5,11 @@ import {SmartText} from './SmartText';
 import {SmartTextList} from './SmartTextList';
 
 export class ElementType {
-  static codeBlock = 'codeBlock';
-  static list = 'list';
-  static image = 'image';
-  static text = 'text';
-  static headline = 'headline';
-  static link = 'link'; // todo
+  static codeBlock = 'CODE_BLOCK';
+  static list = 'LIST';
+  static image = 'IMAGE';
+  static text = 'TEXT';
+  static headline = 'HEADLINE';
 }
 
 export const DynamicElement = ({config, handlers, style = {}}) => {
