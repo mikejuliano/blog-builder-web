@@ -1,5 +1,5 @@
 import React from 'react';
-import {ElementLink} from './ElementLink';
+import {ElementLink} from './links';
 
 export const BlogImage = ({url, linksTo, openInNewTab = false, maxWidth}) => {
   return (

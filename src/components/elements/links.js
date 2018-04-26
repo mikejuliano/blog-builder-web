@@ -7,3 +7,4 @@ export const ElementLink = ({linksTo, text, children, openInNewTab = false}) => 
     </a>
   );
 };
+

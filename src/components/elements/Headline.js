@@ -1,5 +1,5 @@
 import React from 'react';
-import {ElementLink} from './ElementLink';
+import {ElementLink} from './links';
 
 export const Headline = ({size, text, linksTo, openInNewTab}) => {
   const getHeadlineTag = (size, text) => {
