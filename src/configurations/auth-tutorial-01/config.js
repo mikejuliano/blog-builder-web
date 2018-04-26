@@ -49,5 +49,21 @@ export const config = {
         },
       ]
     },
+    {
+      "type": "list",
+      "isOrdered": true,
+      "listItems": [
+        {"text": "Set method to POST", "embeddedLinks": []},
+        {"text": "Enter the url http://localhost:8000/api-token-auth/", "embeddedLinks": []},
+        {"text": "Click the headers tab.", "embeddedLinks": []},
+        {"text": "Add header: Content-Type: application/json", "embeddedLinks": []},
+        {"text": "Go to Body tab", "embeddedLinks": []},
+        {"text": "Click raw", "embeddedLinks": []},
+        {"text": `Enter payload { “username”: “<your-username>”, “password: “<your-password>” }`, "embeddedLinks": []},
+        {"text": "Success Response", "embeddedLinks": []},
+        {"text": "Change the password to something incorrect", "embeddedLinks": []},
+        {"text": "Note the error response", "embeddedLinks": []},
+      ]
+    },
   ]
 };

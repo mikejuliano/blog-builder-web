@@ -3,9 +3,11 @@ import {ElementLink} from './links';
 import first from 'lodash/first';
 import last from 'lodash/last';
 import find from 'lodash/find';
+import {Validator} from '../../common/Validator';
 
 export const SmartText = ({text, embeddedLinks}) => {
   let results = [];
+  Validator.throwIfNil(text, `Missing text`);
   const split = text.split('{{');
 
   split.forEach((item) => {

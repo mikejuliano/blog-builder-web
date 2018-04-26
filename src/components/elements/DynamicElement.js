@@ -2,6 +2,7 @@ import React from 'react';
 import {BlogImage} from './BlogImage';
 import {Headline} from './Headline';
 import {SmartText} from './SmartText';
+import {SmartTextList} from './SmartTextList';
 
 export class ElementType {
   static codeBlock = 'codeBlock';
@@ -19,7 +20,7 @@ export const DynamicElement = ({config, handlers, style = {}}) => {
     case (ElementType.codeBlock):
       break;
     case (ElementType.list):
-      break;
+      return <SmartTextList { ...config }/>;
     case (ElementType.image):
       return <BlogImage
         maxWidth={ style.maxImageWidth } { ...config }
@@ -30,6 +31,8 @@ export const DynamicElement = ({config, handlers, style = {}}) => {
       return <Headline { ...config }/>;
     case (ElementType.link):
       break;
+    default:
+      return null;
     }
   };
 
