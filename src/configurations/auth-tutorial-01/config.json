@@ -4,7 +4,7 @@
   "elements": [
     {
       "type": "image",
-      "file": "01.png"
+      "url": "01.png"
     }
   ]
 }

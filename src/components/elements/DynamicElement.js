@@ -19,7 +19,7 @@ export const DynamicElement = ({config, handlers}) => {
     case (ElementType.list):
       break;
     case (ElementType.image):
-      return <BlogImage file={ '01.png' }/>;
+      return <BlogImage { ...config }/>;
     case (ElementType.paragraph):
       break;
     case (ElementType.headline):
