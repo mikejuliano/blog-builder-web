@@ -14,8 +14,11 @@ export class ElementConfig {
   type;
   size;
   text;
+
   linksTo;
-  url;
+  openInNewTab;
+
+  url; //for image
 
   static DEFAULT = {type: null};
 }

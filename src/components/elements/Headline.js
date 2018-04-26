@@ -1,6 +1,7 @@
 import React from 'react';
+import {ElementLink} from './ElementLink';
 
-export const Headline = ({size, text, linksTo}) => {
+export const Headline = ({size, text, linksTo, openInNewTab}) => {
   const getHeadlineTag = (size, text) => {
     switch (size) {
     case 1:
@@ -18,8 +19,8 @@ export const Headline = ({size, text, linksTo}) => {
     }
   };
   return (
-    <a href={ linksTo }>
+    <ElementLink linksTo={ linksTo } openInNewTab={ openInNewTab }>
       { getHeadlineTag(size, text) }
-    </a>
+    </ElementLink>
   );
 };

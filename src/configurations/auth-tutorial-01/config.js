@@ -16,8 +16,16 @@ export const config = {
     {
       "type": "image",
       "url": "https://res.cloudinary.com/dmh4ucizb/image/upload/v1524698257/auth-tutorial-01/03-gear.png",
+      "linksTo": "http://www.google.com",
+      "openInNewTab": true
     },
-    {"type": "headline", "size": 1, "text": "Cookie Cutter", "linksTo": null},
+    {
+      "type": "headline",
+      "size": 1,
+      "text": "Cookie Cutter",
+      "linksTo": "http://www.google.com",
+      "openInNewTab": false
+    },
     {"type": "headline", "size": 3, "text": "Commands", "linksTo": null},
   ]
 };

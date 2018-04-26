@@ -1,12 +1,12 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import {ElementLink} from './ElementLink';
 
-export const BlogImage = ({url, linksTo, maxWidth}) => {
+export const BlogImage = ({url, linksTo, openInNewTab = false, maxWidth}) => {
   return (
     <div>
-      <a href={ linksTo }>
+      <ElementLink linksTo={ linksTo } openInNewTab={ openInNewTab }>
         <img src={ url } style={ {maxWidth} }/>
-      </a>
+      </ElementLink>
     </div>
   );
 };
