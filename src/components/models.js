@@ -13,7 +13,10 @@ export class BuilderStyle {
 export class ElementConfig {
   type;
   size;
+
   text;
+  embeddedLinks;
+
 
   linksTo;
   openInNewTab;
