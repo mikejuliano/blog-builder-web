@@ -1,5 +1,6 @@
 import React from 'react';
 import {BlogImage} from './BlogImage';
+import {Headline} from './Headline';
 
 export class ElementType {
   static codeBlock = 'codeBlock';
@@ -10,7 +11,7 @@ export class ElementType {
   static link = 'link'; // todo
 }
 
-export const DynamicElement = ({config, handlers}) => {
+export const DynamicElement = ({config, handlers, style = {}}) => {
 
   const renderElement = (c) => {
     switch (c.type) {
@@ -19,11 +20,13 @@ export const DynamicElement = ({config, handlers}) => {
     case (ElementType.list):
       break;
     case (ElementType.image):
-      return <BlogImage { ...config }/>;
+      return <BlogImage
+        maxWidth={ style.maxImageWidth } { ...config }
+      />;
     case (ElementType.paragraph):
       break;
     case (ElementType.headline):
-      break;
+      return <Headline { ...config }/>;
     case (ElementType.link):
       break;
     }

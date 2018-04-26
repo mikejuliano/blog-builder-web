@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import './App.css';
 import {BlogBuilder} from './components/BlogBuilder';
 import {config} from './configurations/auth-tutorial-01/config'; // TODO make dynamic / configurable
+import {BrowserRouter as Router, Route} from 'react-router-dom';
 
 class App extends Component {
 
@@ -10,15 +11,19 @@ class App extends Component {
 
     return (
       <div className="App">
-        <header className="App-header">
-          <h1 className="App-title">Blog Builder</h1>
-        </header>
-        <div>
-          <BlogBuilder config={ config }/>
-        </div>
+        <Router>
+          <Route
+            path="/"
+            render={ (props) => <BlogBuilder config={ config }/> }
+          />
+        </Router>
       </div>
     );
   }
 }
 
 export default App;
+
+
+
+
